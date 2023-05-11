@@ -1,0 +1,82 @@
+<!DOCTYPE html> <html><head>
+        <title>Buzzfeed Quiz!</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Time New Roman', Times New Roman;
+    background-color: #dd8cff;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>Which type of cat are you? :3</h1>
+        </div>
+        <div class="questions">
+            <h4>Q1 How often do you go out?</h4>
+            <img src="https://news.cvm.ncsu.edu/wp-content/uploads/sites/3/2022/02/AdobeStock_329120839-scaled-e1644527433799.jpeg">
+          <input class="goingout" placeholder="write number 0-5">
+                 
+            <h4>Q2 Do you enjoy time alone? </h4>
+            <img src="https://i.ytimg.com/vi/HP9jkPkh9Wk/maxresdefault.jpg">
+        </div>
+    <input class="alone" placeholder="write yes or no">
+        
+        <button>Press sumbit and find out which cat you are!</button>
+               <div class="result">
+            Result...
+            this is where the user will see their quiz result!
+                    </div>
+        <div class="Scottish Fold">
+            <img src="https://rare-gallery.com/uploads/posts/115395-scottish-fold-cat-kitten-eyes-gray-wool-cute-animal-pet.jpg">
+        </div>
+        <div class="Persian Cat">
+            <img src="https://img.cutenesscdn.com/375/clsd/getty/9d63ea7f7bd0464b8ebcf42a5d6b8a45">
+            </div>
+        <div class="Siamese Cat">
+            <img src="https://www.litter-robot.com/media/blog/alex-meier-siamese.jpg">
+        </div>
+        <div class="British Shorthair Cat">
+            <img src="https://www.thesprucepets.com/thmb/2HF5pGwbA1_74qlubXRyEM_xxlk=/2121x0/filters:no_upscale():strip_icc()/GettyImages-1319774380-c3da91f9259a47e0966007f8e10690ba.jpg">
+        </div>
+        
+        
+    
+<script>
+/*__POPCODESTART__*/
+var scottishFold = document.querySelector(".scottishFold");
+var persianCat = document.querySelector(".persianCat");
+var siameseCat = document.querySelector(".siameseCat");
+var britishShorthair = document.querySelector(".britishShorthair");
+var results = document.querySelector(".result");
+var button = document.querySelector("button");
+
+button.onclick = function () {};
+
+var goingInput = document.querySelector(".goingout").value;
+var aloneInput = document.querySelector(".alone").value;
+console.log(goingInput);
+console.log(aloneInput);
+
+if (goingInput >= 3 && goingInput <= 5 && (aloneInput === "yes" || aloneInput === "yes")) {
+  results.style.display = "block";
+  results.innerHTML = "You go out" + goingInput + " a week and you  " + aloneInput + "you do enjoy time alone. Therefore, you are a Scottish Fold!";
+  scottishFold.style.display = "block";
+} else if (goingInput <= 2 && aloneInput <= 1 && (aloneInput === "no" || aloneInput === "no")) {
+  results.style.display = "block";
+  results.innerHTML = "You go out" + goingInput + " times week and  " + aloneInput + "you do not like  being alone . Therefore, you are a Persian Cat!";
+  persianCat.style.display = "block";
+} else if (function (goingInput) {
+  return 2 && goingInput <= 2;
+} && (aloneInput === "no" || aloneInput === "no")) {
+  results.style.display = "block";
+  results.innerHTML = "You got " + goingInput + "at most " + aloneInput + " you do not like being alone. Therefore, you are a Siamese Cat!";
+  siameseCat.style.display = "block";
+} else if (goingInput >= 3 && goingInput <= 4 && (aloneInput === "yes" || aloneInput === "yes")) {
+  results.style.display = "block";
+  results.innerHTML = "You go out " + goingInput + "at most and" + aloneInput + "you enjoy time alone. Therefore, you are a British Shorthair Cat!";
+  britishShorthair.style.display = "block";
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbInNjb3R0aXNoRm9sZCIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInBlcnNpYW5DYXQiLCJzaWFtZXNlQ2F0IiwiYnJpdGlzaFNob3J0aGFpciIsInJlc3VsdHMiLCJidXR0b24iLCJvbmNsaWNrIiwiZ29pbmdJbnB1dCIsInZhbHVlIiwiYWxvbmVJbnB1dCIsImNvbnNvbGUiLCJsb2ciLCJzdHlsZSIsImRpc3BsYXkiLCJpbm5lckhUTUwiXSwibWFwcGluZ3MiOiJBQUFBLElBQUlBLFlBQVksR0FBQ0MsUUFBUSxDQUFDQyxhQUFULENBQXVCLGVBQXZCLENBQWpCO0FBQ0EsSUFBSUMsVUFBVSxHQUFDRixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsYUFBdkIsQ0FBZjtBQUNBLElBQUlFLFVBQVUsR0FBQ0gsUUFBUSxDQUFDQyxhQUFULENBQXVCLGFBQXZCLENBQWY7QUFDQSxJQUFJRyxnQkFBZ0IsR0FBQ0osUUFBUSxDQUFDQyxhQUFULENBQXVCLG1CQUF2QixDQUFyQjtBQUNBLElBQUlJLE9BQU8sR0FBR0wsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLENBQWQ7QUFDQSxJQUFJSyxNQUFNLEdBQUdOLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixRQUF2QixDQUFiOztBQUNBSyxNQUFNLENBQUNDLE9BQVAsR0FBZSxZQUFVLENBQUUsQ0FBM0I7O0FBRUEsSUFBSUMsVUFBVSxHQUFHUixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsV0FBdkIsRUFBb0NRLEtBQXJEO0FBQ0EsSUFBSUMsVUFBVSxHQUFHVixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsUUFBdkIsRUFBaUNRLEtBQWxEO0FBRUFFLE9BQU8sQ0FBQ0MsR0FBUixDQUFZSixVQUFaO0FBQ0lHLE9BQU8sQ0FBQ0MsR0FBUixDQUFZRixVQUFaOztBQUVBLElBQUlGLFVBQVUsSUFBSSxDQUFkLElBQW1CQSxVQUFVLElBQUUsQ0FBaEMsS0FBdUNFLFVBQVUsS0FBSSxLQUFkLElBQTZCQSxVQUFVLEtBQUcsS0FBakYsQ0FBSCxFQUEyRjtBQUMzRkwsRUFBQUEsT0FBTyxDQUFDUSxLQUFSLENBQWNDLE9BQWQsR0FBc0IsT0FBdEI7QUFDQVQsRUFBQUEsT0FBTyxDQUFDVSxTQUFSLEdBQW9CLGVBQWNQLFVBQWQsR0FBMEIsbUJBQTFCLEdBQThDRSxVQUE5QyxHQUEwRCw4REFBOUU7QUFDQVgsRUFBQUEsWUFBWSxDQUFDYyxLQUFiLENBQW1CQyxPQUFuQixHQUEyQixPQUEzQjtBQUNDLENBSkQsTUFLSyxJQUFJTixVQUFVLElBQUksQ0FBZCxJQUFtQkUsVUFBVSxJQUFFLENBQWhDLEtBQXVDQSxVQUFVLEtBQUksSUFBZCxJQUE0QkEsVUFBVSxLQUFHLElBQWhGLENBQUgsRUFBeUY7QUFDOUZMLEVBQUFBLE9BQU8sQ0FBQ1EsS0FBUixDQUFjQyxPQUFkLEdBQXNCLE9BQXRCO0FBQ0FULEVBQUFBLE9BQU8sQ0FBQ1UsU0FBUixHQUFvQixlQUFjUCxVQUFkLEdBQTBCLG1CQUExQixHQUE4Q0UsVUFBOUMsR0FBMEQsa0VBQTlFO0FBQ0FSLEVBQUFBLFVBQVUsQ0FBQ1csS0FBWCxDQUFpQkMsT0FBakIsR0FBeUIsT0FBekI7QUFDTSxDQUpELE1BS0EsSUFBSSxVQUFBTixVQUFVO0FBQUEsU0FBSSxLQUFLQSxVQUFVLElBQUUsQ0FBckI7QUFBQSxDQUFYLEtBQXVDRSxVQUFVLEtBQUksSUFBZCxJQUE0QkEsVUFBVSxLQUFHLElBQWhGLENBQUgsRUFBeUY7QUFDOUZMLEVBQUFBLE9BQU8sQ0FBQ1EsS0FBUixDQUFjQyxPQUFkLEdBQXNCLE9BQXRCO0FBQ0FULEVBQUFBLE9BQU8sQ0FBQ1UsU0FBUixHQUFvQixhQUFZUCxVQUFaLEdBQXdCLFVBQXhCLEdBQW1DRSxVQUFuQyxHQUErQyxpRUFBbkU7QUFDQVAsRUFBQUEsVUFBVSxDQUFDVSxLQUFYLENBQWlCQyxPQUFqQixHQUF5QixPQUF6QjtBQUNNLENBSkQsTUFLSyxJQUFJTixVQUFVLElBQUksQ0FBZCxJQUFtQkEsVUFBVSxJQUFFLENBQWhDLEtBQXVDRSxVQUFVLEtBQUksS0FBZCxJQUE2QkEsVUFBVSxLQUFHLEtBQWpGLENBQUgsRUFBMkY7QUFDckdMLEVBQUFBLE9BQU8sQ0FBQ1EsS0FBUixDQUFjQyxPQUFkLEdBQXNCLE9BQXRCO0FBQ0FULEVBQUFBLE9BQU8sQ0FBQ1UsU0FBUixHQUFvQixnQkFBZVAsVUFBZixHQUEyQixhQUEzQixHQUEyQ0UsVUFBM0MsR0FBd0QsbUVBQTVFO0FBQ0FOLEVBQUFBLGdCQUFnQixDQUFDUyxLQUFqQixDQUF1QkMsT0FBdkIsR0FBK0IsT0FBL0I7QUFDRCIsInNvdXJjZXNDb250ZW50IjpbImxldCBzY290dGlzaEZvbGQ9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5zY290dGlzaEZvbGRcIik7XG5sZXQgcGVyc2lhbkNhdD1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnBlcnNpYW5DYXRcIik7XG5sZXQgc2lhbWVzZUNhdD1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnNpYW1lc2VDYXRcIik7XG5sZXQgYnJpdGlzaFNob3J0aGFpcj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmJyaXRpc2hTaG9ydGhhaXJcIik7XG5sZXQgcmVzdWx0cyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0XCIpO1xubGV0IGJ1dHRvbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCJidXR0b25cIik7XG5idXR0b24ub25jbGljaz1mdW5jdGlvbigpe307XG5cbmxldCBnb2luZ0lucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5nb2luZ291dFwiKS52YWx1ZTtcbmxldCBhbG9uZUlucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5hbG9uZVwiKS52YWx1ZTtcbiAgICBcbmNvbnNvbGUubG9nKGdvaW5nSW5wdXQpO1xuICAgIGNvbnNvbGUubG9nKGFsb25lSW5wdXQpO1xuICAgIFxuICAgIGlmKChnb2luZ0lucHV0ID49IDMgJiYgZ29pbmdJbnB1dDw9NSkgJiYgKGFsb25lSW5wdXQgPT09XCJ5ZXNcIiB8fCAgICAgICBhbG9uZUlucHV0PT09XCJ5ZXNcIikpe1xuICAgIHJlc3VsdHMuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgcmVzdWx0cy5pbm5lckhUTUwgPSBcIllvdSBnbyBvdXRcIiArZ29pbmdJbnB1dCsgXCIgYSB3ZWVrIGFuZCB5b3UgIFwiK2Fsb25lSW5wdXQrIFwieW91IGRvIGVuam95IHRpbWUgYWxvbmUuIFRoZXJlZm9yZSwgeW91IGFyZSBhIFNjb3R0aXNoIEZvbGQhXCI7XG4gICAgc2NvdHRpc2hGb2xkLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgIH1cbiAgICBlbHNlIGlmKChnb2luZ0lucHV0IDw9IDIgJiYgYWxvbmVJbnB1dDw9MSkgJiYgKGFsb25lSW5wdXQgPT09XCJub1wiIHx8ICAgICAgIGFsb25lSW5wdXQ9PT1cIm5vXCIpKXtcbiAgICByZXN1bHRzLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgIHJlc3VsdHMuaW5uZXJIVE1MID0gXCJZb3UgZ28gb3V0XCIgK2dvaW5nSW5wdXQrIFwiIHRpbWVzIHdlZWsgYW5kICBcIithbG9uZUlucHV0KyBcInlvdSBkbyBub3QgbGlrZSAgYmVpbmcgYWxvbmUgLiBUaGVyZWZvcmUsIHlvdSBhcmUgYSBQZXJzaWFuIENhdCFcIjtcbiAgICBwZXJzaWFuQ2F0LnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgICAgICAgfVxuICAgIGVsc2UgaWYoKGdvaW5nSW5wdXQgPT4gMiAmJiBnb2luZ0lucHV0PD0yKSAmJiAoYWxvbmVJbnB1dCA9PT1cIm5vXCIgfHwgICAgICAgYWxvbmVJbnB1dD09PVwibm9cIikpe1xuICAgIHJlc3VsdHMuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgcmVzdWx0cy5pbm5lckhUTUwgPSBcIllvdSBnb3QgXCIgK2dvaW5nSW5wdXQrIFwiYXQgbW9zdCBcIithbG9uZUlucHV0KyBcIiB5b3UgZG8gbm90IGxpa2UgYmVpbmcgYWxvbmUuIFRoZXJlZm9yZSwgeW91IGFyZSBhIFNpYW1lc2UgQ2F0IVwiO1xuICAgIHNpYW1lc2VDYXQuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgICAgICB9XG4gICAgICAgICBlbHNlIGlmKChnb2luZ0lucHV0ID49IDMgJiYgZ29pbmdJbnB1dDw9NCkgJiYgKGFsb25lSW5wdXQgPT09XCJ5ZXNcIiB8fCAgICAgICBhbG9uZUlucHV0PT09XCJ5ZXNcIikpe1xuICAgIHJlc3VsdHMuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgcmVzdWx0cy5pbm5lckhUTUwgPSBcIllvdSBnbyBvdXQgXCIgK2dvaW5nSW5wdXQrIFwiYXQgbW9zdCBhbmRcIiArIGFsb25lSW5wdXQgKyBcInlvdSBlbmpveSB0aW1lIGFsb25lLiBUaGVyZWZvcmUsIHlvdSBhcmUgYSBCcml0aXNoIFNob3J0aGFpciBDYXQhXCI7XG4gICAgYnJpdGlzaFNob3J0aGFpci5zdHlsZS5kaXNwbGF5PVwiYmxvY2tcIjtcbiAgfVxuICAgIFxuIl19</script></body></html>
